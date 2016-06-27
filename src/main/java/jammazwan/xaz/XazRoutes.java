@@ -10,7 +10,8 @@ public class XazRoutes extends RouteBuilder {
 
 	@Override
 	public void configure() throws Exception {
-		from("file://../jammazwan.shared/src/main/resources/data/txt/?noop=true&fileName=transforms.txt").transform()
-				.method(xazBean).to("file://./?fileName=sortedTransforms.txt");
+		from("file://../jammazwan.shared/src/main/resources/data/txt/?noop=true&fileName=transforms.txt")
+		.transform().method(xazBean)
+		.to("file://./?fileName=sortedTransforms.txt");
 	}
 }

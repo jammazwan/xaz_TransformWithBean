@@ -6,6 +6,7 @@ import java.util.Collections;
 public class XazBean {
 
 	public String answer(String text) {
+		
 		StringBuffer sb = new StringBuffer();
 		ArrayList<String> list = new ArrayList<>();
 		Collections.addAll(list, text.split("\n"));
